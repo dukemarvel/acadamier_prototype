@@ -1,0 +1,177 @@
+@use "/global.scss" as *; 
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  background-color: $white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  max-height: 94px;
+
+  /* -----------------------------
+   * Left side: Logo + Category 
+   * ----------------------------*/
+  .nav-left {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    gap: 3rem;
+    
+
+    .logo img {
+      display: block;
+      max-height: 40px;
+      
+      height: auto;
+      width: auto;
+    }
+
+    .category-menu {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      font-weight: 500;
+      color: $gray-700;
+
+      &:hover {
+        color: $primary-color;
+      }
+
+      .category-icon {
+        width: 20px;
+        height: 20px;
+      }
+
+      .category-label {
+        font-size: 1rem;
+      }
+
+      .dropdown-arrow {
+        font-size: 0.75rem;
+        margin-left: 0.25rem;
+      }
+    }
+
+    /* -----------------------------
+   * Center: Search Bar
+   * ----------------------------*/
+  .search-bar {
+    flex: 1; // stretches in middle
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    
+    margin: 0 1rem; // spacing from left/right sections
+
+    input {
+      flex: 1;
+      padding: 0.5rem 0.75rem;
+      border: 1px  $gray-200;
+      border-right: none;
+      border-radius: 4px 0 0 4px;
+      font-size: 1rem;
+      outline: none;
+      background-color: #F5F5F5;
+      
+
+      &:focus {
+        border-color: $primary-color;
+      }
+    }
+
+    .search-icon {
+      background-color: #F5F5F5;
+      border: 1px  $gray-200;
+      border-left: none; // merges with input
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 0 4px 4px 0;
+
+      &:hover {
+        background-color: $gray-50;
+      }
+    }
+  }
+  }
+
+  
+
+  /* -----------------------------
+   * Right side: Buttons & Icons
+   * ----------------------------*/
+  .nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    
+
+    .btn-instructor {
+      padding: 0.5rem 1rem;
+      background-color: $white;
+      color: #3A3A6C;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 16px;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    .btn-my-learning {
+      background-color: #b10e24;
+      color: $white;
+      border: none;
+      width: 132px;
+      height: 60px;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    .icon {
+      position: relative;
+      font-size: 1.6rem;
+      cursor: pointer;
+      color: $gray-700;
+      
+
+      &:hover {
+        color: $primary-color;
+      }
+
+      .icon-badge {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background-color: $primary-color;
+        color: $white;
+        font-size: 0.7rem;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .user-avatar {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  }
+}

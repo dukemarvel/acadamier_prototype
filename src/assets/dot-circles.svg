@@ -1,0 +1,10 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dot-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="2" fill="#B10E24"/>
+    </pattern>
+  </defs>
+
+  <!-- 9×9 grid (180px ÷ 20px spacing = 9 rows & cols) -->
+  <rect width="180" height="180" fill="url(#dot-pattern)"/>
+</svg>
