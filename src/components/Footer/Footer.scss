@@ -1,4 +1,4 @@
-@use "/global.scss" as *;
+@use "/global_variables.scss" as *;
 
 .footer {
   position: relative;
@@ -6,6 +6,10 @@
   color: #fff;
   padding: 4rem 10rem;
   overflow: hidden;
+
+  @media (max-width: 920px){
+    padding: 2.5rem 2rem;
+  }
   
   .footer-bg {
     position: absolute;
@@ -27,7 +31,7 @@
     margin-bottom: 2rem;
     position: relative;
 
-    @media (max-width: 768px) {
+    @media (max-width: 920px) {
       flex-direction: column;
       gap: 2rem;
     }

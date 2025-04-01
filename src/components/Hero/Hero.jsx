@@ -7,7 +7,7 @@ import CombinedBadge from "./CombinedBadge";
 import NotificationIcon from "../../assets/notification-icon.svg";
 import DottedCircles from "../../assets/dot-circles.svg";
 
-// Variants for staggering the text elements in the hero content
+
 const contentVariants = {
   hidden: {},
   visible: {
@@ -26,7 +26,6 @@ const textItemVariants = {
 function Hero() {
   return (
     <section className="hero">
-      {/* Notification with a spring entrance */}
       <motion.div 
         className="hero-notification"
         initial={{ scale: 0 }}
@@ -36,18 +35,14 @@ function Hero() {
         <img src={NotificationIcon} alt="Notification" />
       </motion.div>
 
-      {/* LEFT: TEXT CONTENT with staggered animations */}
       <motion.div
         className="hero-content"
         variants={contentVariants}
         initial="hidden"
         animate="visible"
       >
-        <motion.h4 className="hero-subtitle" variants={textItemVariants}>
-          For Individuals
-        </motion.h4>
         <motion.h1 className="hero-title" variants={textItemVariants}>
-          Our trade is helping <br /> you master yours
+          Our trade is helping you master yours
         </motion.h1>
         <motion.p className="hero-description" variants={textItemVariants}>
           There are many perks to upskilling yourself: you stand out among 
@@ -65,14 +60,14 @@ function Hero() {
         </motion.button>
       </motion.div>
 
-      {/* RIGHT: IMAGE + BADGES */}
+      
       <motion.div 
         className="hero-image-wrapper"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        {/* Animated dotted circles background */}
+        
         <motion.img 
           src={DottedCircles} 
           alt="Decorative dotted circles" 
@@ -81,7 +76,6 @@ function Hero() {
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         />
 
-        {/* PERSON IMAGE with a fade-in/scale-up effect */}
         <motion.div 
           className="hero-image-container"
           initial={{ opacity: 0, scale: 0.95 }}

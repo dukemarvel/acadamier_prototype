@@ -17,7 +17,6 @@ function Steps() {
       </div>
 
       <div className="steps-content">
-        {/* LEFT: IMAGE */}
         <div className="steps-image-container">
           <div className="image-box">
             <img src={LayerOne} alt="Layer One" className="layer-one" />
@@ -30,7 +29,6 @@ function Steps() {
           </div>
         </div>
 
-        {/* RIGHT: STEPS LIST */}
         <div className="steps-list">
           <div className="step">
             <div className="step-number">01</div>
