@@ -32,14 +32,14 @@ function Steps() {
         <div className="steps-list">
           <div className="step">
             <div className="step-number">01</div>
-            <p>
+            <p className="p-class">
               Click <strong>“Sign up”</strong> now and choose{" "}
               <strong>“Personal Account.”</strong>
             </p>
           </div>
           <div className="step">
             <div className="step-number">02</div>
-            <p>Input your name, email, and password.</p>
+            <p className="p-class">Input your name, email, and password.</p>
           </div>
           <div className="step">
             <div className="step-number">03</div>

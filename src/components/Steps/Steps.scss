@@ -47,7 +47,6 @@
   flex-direction: row;
   justify-content: space-between; 
   align-items: flex-start;
-  gap: 4rem;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -138,11 +137,11 @@
   .steps-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1rem;
     max-width: 600px;
     margin-top: 3rem;
     margin-left: 0;
-    margin-right: auto;
+    margin-right: 3rem;
 
     @media (max-width: 1025px){
       grid-template-columns: repeat(1, 1fr);
@@ -155,7 +154,7 @@
     .step {
       display: flex;
       align-items: flex-start;
-      gap: 2rem;
+      gap: .8rem;
 
       .step-number {
         min-width: 40px;
@@ -180,13 +179,20 @@
 
       p {
         font-size: 1rem;
-        line-height: 1.4;
+        line-height: 1.3;
         color: $gray-700;
         margin: 0;
 
         strong {
           color: $gray-800;
         }
+      }
+
+      .p-class{
+        margin-bottom: 2.1rem;
+
+        @media (max-width: 920px){
+          margin-bottom: o;
       }
     }
   }
